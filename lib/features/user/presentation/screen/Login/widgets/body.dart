@@ -103,14 +103,6 @@ class _BodyState extends State<Body> {
                   // onPressed: () => Navigate.to(context, HomeScreen.id)
                   onPressed: () => _onSubmit(_onSuccess),
                 )),
-                const SizedBox(width: 10),
-                FeatureButton(
-                  child: SvgPicture.asset('assets/icons/face_unlock.svg'),
-                ),
-                const SizedBox(width: 10),
-                FeatureButton(
-                  child: SvgPicture.asset('assets/icons/fingerprint.svg'),
-                ),
               ]),
             ),
             const SizedBox(height: 25),
