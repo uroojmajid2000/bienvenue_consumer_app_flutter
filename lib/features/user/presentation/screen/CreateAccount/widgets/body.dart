@@ -14,10 +14,10 @@ class Body extends StatefulWidget {
 }
 
 class _BodyState extends State<Body> {
-  List<String> businessType = ['Type of Business', 'Restaurant', 'Hotel'];
-  String selectedBusinessType = 'Type of Business';
-  List<String> restaurant = ['Cuisine'];
-  String selecetdRestaurant = 'Cuisine';
+  // List<String> businessType = ['Type of Business', 'Restaurant', 'Hotel'];
+  // String selectedBusinessType = 'Type of Business';
+  // List<String> restaurant = ['Cuisine'];
+  // String selecetdRestaurant = 'Cuisine';
   // List<String> excursions = ['Hotel'];
 
   @override
@@ -33,20 +33,15 @@ class _BodyState extends State<Body> {
               style: TextStyle(fontSize: 20, fontWeight: FontWeight.w600),
             ),
           ),
-          const SizedBox(height: 24),
+          const SizedBox(height: 12),
           TextFieldContainer(
-            child: MyTextField(hintText: 'Brand Name', onChange: () {}),
+            child: MyTextField(hintText: 'First Name', onChange: () {}),
           ),
-          const SizedBox(height: 15),
+          const SizedBox(height: 12),
           TextFieldContainer(
-            child:
-                MyTextField(hintText: 'Legal Business Name', onChange: () {}),
+            child: MyTextField(hintText: 'Last Name', onChange: () {}),
           ),
-          const SizedBox(height: 15),
-          TextFieldContainer(
-            child: MyTextField(hintText: 'Corporation Number', onChange: () {}),
-          ),
-          const SizedBox(height: 15),
+          const SizedBox(height: 12),
           SizedBox(
             width: size.width * 0.85,
             child: Row(
@@ -60,7 +55,7 @@ class _BodyState extends State<Body> {
                     ),
                   ),
                 ),
-                const SizedBox(width: 15),
+                const SizedBox(width: 12),
                 Expanded(
                   child: TextFieldContainer(
                     width: 2,
@@ -73,7 +68,7 @@ class _BodyState extends State<Body> {
               ],
             ),
           ),
-          const SizedBox(height: 15),
+          const SizedBox(height: 12),
           SizedBox(
             width: size.width * 0.85,
             child: Row(
@@ -87,7 +82,7 @@ class _BodyState extends State<Body> {
                     ),
                   ),
                 ),
-                const SizedBox(width: 15),
+                const SizedBox(width: 12),
                 Expanded(
                   child: TextFieldContainer(
                     width: 2,
@@ -129,40 +124,20 @@ class _BodyState extends State<Body> {
           ),
           const SizedBox(height: 15),
           TextFieldContainer(
-            child: MyDropdown(
-                items: businessType,
-                selected: selectedBusinessType,
-                onChange: (value) {
-                  setState(() {
-                    selecetdRestaurant = value;
-                  });
-                }),
-          ),
-          const SizedBox(height: 15),
-          TextFieldContainer(
-            child: MyDropdown(
-                items: restaurant,
-                selected: selecetdRestaurant,
-                onChange: (value) {
-                  setState(() {
-                    selecetdRestaurant = value;
-                  });
-                }),
-          ),
-          const SizedBox(height: 15),
-          TextFieldContainer(
-            child:
-                MyTextField(hintText: 'Business Phone Number', onChange: () {}),
-          ),
-          const SizedBox(height: 15),
-          TextFieldContainer(
             child: MyTextField(hintText: 'Email', onChange: () {}),
           ),
-          const SizedBox(height: 15),
+          const SizedBox(height: 12),
           TextFieldContainer(
-            child: MyTextField(hintText: 'Website', onChange: () {}),
+            child: MyTextField(hintText: 'Phone Number', onChange: () {}),
           ),
           const SizedBox(height: 15),
+          TextFieldContainer(
+              child: MyTextField(
+            hintText: 'Password',
+            keyboardType: TextInputType.number,
+            onChange: (value) {},
+          )),
+          const SizedBox(height: 12),
           TextFieldContainer(
             child: Button(
               child: const Text('Sign up',
