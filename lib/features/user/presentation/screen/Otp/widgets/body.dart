@@ -38,10 +38,10 @@ class _BodyState extends State<Body> {
             child: Text(
               textAlign: TextAlign.center,
               'An 4 digit code has been sent to 45678901222',
-              style: TextStyle(fontSize: 16),
+              style: TextStyle(fontSize: 15),
             ),
           ),
-          const SizedBox(height: 22),
+          const SizedBox(height: 25),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
