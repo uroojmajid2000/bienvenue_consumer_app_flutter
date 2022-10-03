@@ -26,7 +26,7 @@ class _BodyState extends State<Body> {
           SvgPicture.asset('assets/logos/bienvenue.svg'),
           const SizedBox(height: 30),
           const Text(
-            'Enter OTP Code',
+            'Verification code',
             style: TextStyle(
               fontSize: 24,
               fontWeight: FontWeight.w600,
@@ -38,10 +38,10 @@ class _BodyState extends State<Body> {
             child: Text(
               textAlign: TextAlign.center,
               'We have sent the code verification to Your Mobile Number',
-              style: TextStyle(fontSize: 16),
+              style: TextStyle(fontSize: 15),
             ),
           ),
-          const SizedBox(height: 22),
+          const SizedBox(height: 25),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [

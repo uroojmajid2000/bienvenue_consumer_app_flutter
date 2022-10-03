@@ -12,6 +12,7 @@ import 'package:bienvenue_consumer_app_flutter/features/user/presentation/screen
 import 'package:bienvenue_consumer_app_flutter/features/user/presentation/screen/Otp/otp_screen.dart';
 import 'package:bienvenue_consumer_app_flutter/features/user/presentation/screen/Profile/profile_screen.dart';
 import 'package:bienvenue_consumer_app_flutter/features/user/presentation/screen/Splash/splash_screen.dart';
+import 'package:bienvenue_consumer_app_flutter/features/user/presentation/screen/Verification/verification_screen.dart';
 
 import 'package:flutter/material.dart';
 
@@ -32,5 +33,6 @@ class Routes {
     ScanScreen.id: (context) => const ScanScreen(),
     SplashScreen.id: (context) => const SplashScreen(),
     OtpScreen.id: (context) => OtpScreen(),
+    VerificationScreen.id: (context) => VerificationScreen(),
   };
 }

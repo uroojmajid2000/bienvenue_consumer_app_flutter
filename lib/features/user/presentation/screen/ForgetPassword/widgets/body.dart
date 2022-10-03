@@ -1,5 +1,6 @@
 import 'package:bienvenue_consumer_app_flutter/features/user/presentation/screen/ForgetPassword/forget_password_screen.dart';
 import 'package:bienvenue_consumer_app_flutter/features/user/presentation/screen/ForgetPassword/widgets/forget_card.dart';
+import 'package:bienvenue_consumer_app_flutter/features/user/presentation/screen/Verification/verification_screen.dart';
 import 'package:bienvenue_consumer_app_flutter/shared/routes/navigate.dart';
 import 'package:bienvenue_consumer_app_flutter/shared/widgets/button.dart';
 import 'package:flutter/material.dart';
@@ -50,7 +51,7 @@ class Body extends StatelessWidget {
                   fontSize: 18,
                 ),
               ),
-              onPressed: () => Navigate.to(context, ForgetPasswordScreen.id)),
+              onPressed: () => Navigate.to(context, VerificationScreen.id)),
         ],
       ),
     );
