@@ -1,3 +1,4 @@
+import 'package:bienvenue_consumer_app_flutter/features/user/presentation/screen/ForgetPasswordInner/forget_password_inner_screen.dart';
 import 'package:bienvenue_consumer_app_flutter/features/user/presentation/screen/Login/login_screen.dart';
 import 'package:bienvenue_consumer_app_flutter/features/user/presentation/screen/Otp/widgets/text_field_box.dart';
 import 'package:bienvenue_consumer_app_flutter/shared/routes/navigate.dart';
@@ -93,7 +94,8 @@ class _BodyState extends State<Body> {
                   fontSize: 18,
                 ),
               ),
-              onPressed: () => Navigate.to(context, LoginScreen.id)),
+              onPressed: () =>
+                  Navigate.to(context, ForgetPasswordInnerScreen.id)),
         ],
       ),
     );
