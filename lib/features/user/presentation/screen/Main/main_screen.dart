@@ -19,15 +19,14 @@ class _MainScreenState extends State<MainScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        key: _key,
-        drawer: BuildDrawer(
-          globalKey: _key,
-        ),
-        appBar: BuildAppbar(globalKey: _key, showmenu: false));
-    // Layout(
-    //   body: const SingleChildScrollView(
-    //     child: Body(),
-    //   ),
-    // );
+      key: _key,
+      drawer: BuildDrawer(
+        globalKey: _key,
+      ),
+      appBar: BuildAppbar(globalKey: _key, showmenu: false),
+      body: const SingleChildScrollView(
+        child: Body(),
+      ),
+    );
   }
 }

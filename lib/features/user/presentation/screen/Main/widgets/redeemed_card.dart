@@ -14,13 +14,13 @@ class RedeemedCard extends StatelessWidget {
     return Expanded(
       child: AppCard(
         child: Container(
-          margin: const EdgeInsets.symmetric(vertical: 15.0),
-          child: Column(children: [
-            Text(heading, style: style),
-            const SizedBox(height: 5),
-            Text(value, style: style),
-          ]),
-        ),
+            // margin: const EdgeInsets.symmetric(vertical: 15.0),
+            // child: Column(children: [
+            //   Text(heading, style: style),
+            //   const SizedBox(height: 5),
+            //   Text(value, style: style),
+            // ]),
+            ),
       ),
     );
   }
