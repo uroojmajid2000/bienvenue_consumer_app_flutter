@@ -6,8 +6,13 @@ import 'package:flutter/material.dart';
 
 class BuildAppbar extends StatelessWidget with PreferredSizeWidget {
   final GlobalKey<ScaffoldState> globalKey;
+  final bool showmenu;
 
-  const BuildAppbar({super.key, required this.globalKey});
+  const BuildAppbar({
+    super.key,
+    required this.globalKey,
+    this.showmenu = true,
+  });
 
   @override
   Size get preferredSize => const Size.fromHeight(65);
@@ -16,16 +21,19 @@ class BuildAppbar extends StatelessWidget with PreferredSizeWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Material(
-        elevation: 2.0,
+        // elevation: 2.0,
         child: Container(
+          color: Colors.white,
           padding: const EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              InkWell(
-                onTap: () => globalKey.currentState!.openDrawer(),
-                child: const Icon(Icons.menu),
-              ),
+              (showmenu == true)
+                  ? InkWell(
+                      onTap: () => globalKey.currentState!.openDrawer(),
+                      child: const Icon(Icons.menu),
+                    )
+                  : const SizedBox(),
               const SizedBox(width: 15),
               const Expanded(child: SearchBar()),
               const SizedBox(width: 15),

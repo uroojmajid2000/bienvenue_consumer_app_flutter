@@ -24,7 +24,9 @@ class Layout extends StatelessWidget {
       drawer: BuildDrawer(
         globalKey: _key,
       ),
-      appBar: BuildAppbar(globalKey: _key),
+      appBar: BuildAppbar(
+        globalKey: _key,
+      ),
       body: body,
       bottomNavigationBar: BuildBottomAppBar(
         currentTab: currentTab,

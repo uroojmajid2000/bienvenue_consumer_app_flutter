@@ -9,6 +9,7 @@ import 'package:bienvenue_consumer_app_flutter/features/user/presentation/screen
 import 'package:bienvenue_consumer_app_flutter/features/user/presentation/screen/ForgetPasswordInner/forget_password_inner_screen.dart';
 import 'package:bienvenue_consumer_app_flutter/features/user/presentation/screen/Home/home_screen.dart';
 import 'package:bienvenue_consumer_app_flutter/features/user/presentation/screen/Login/login_screen.dart';
+import 'package:bienvenue_consumer_app_flutter/features/user/presentation/screen/Main/main_screen.dart';
 import 'package:bienvenue_consumer_app_flutter/features/user/presentation/screen/Otp/otp_screen.dart';
 import 'package:bienvenue_consumer_app_flutter/features/user/presentation/screen/Profile/profile_screen.dart';
 import 'package:bienvenue_consumer_app_flutter/features/user/presentation/screen/Splash/splash_screen.dart';
@@ -26,6 +27,7 @@ class Routes {
     ForgetPasswordInnerScreen.id: (context) =>
         const ForgetPasswordInnerScreen(),
     HomeScreen.id: (context) => const HomeScreen(),
+    MainScreen.id: (context) => const MainScreen(),
     LoginScreen.id: (context) => const LoginScreen(),
     NotificationScreen.id: (context) => const NotificationScreen(),
     ProductDetailScreen.id: (context) => const ProductDetailScreen(),
